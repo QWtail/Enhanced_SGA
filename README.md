@@ -29,9 +29,10 @@ Please find the dependencies in requirements.txt
     ```
     run ./Run_GraphAnalysis.py 
     ```
-    Output: * the graph attributes for P3 P4 and P5 under each folder.
-            * graph_anomaly_weight.csv # weight for graph attributes in determing the integrated anomaly score
-            * G.pickle # correlation graph matrix
+    Output: 
+    - the graph attributes for P3 P4 and P5 under each folder.
+    - graph_anomaly_weight.csv # weight for graph attributes in determing the integrated anomaly score
+    - G.pickle # correlation graph matrix
   
   - 3_anomaly_analysis  # prediction module: take input from graph analysis module and output anomaly score. To run this module:
     ```
