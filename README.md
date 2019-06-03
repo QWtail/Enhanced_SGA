@@ -15,11 +15,11 @@ The three modules listed follow should run consecutively one after another. The 
 Please find the dependencies in requirements.txt
 ```
 
-Directory Stucture 
-| --DSO Anomaly Dectection # main folder 
-|    | -- data processing # data processing module: take input from the raw dataset and output    the initial attributes
-|    |    | -- DSO_file_attribute # FILE LOG
-|    |    |    | -- FileMoniter # raw data of FILE LOG from DSO 
+## Directory Stucture 
+* DSO Anomaly Dectection # main folder 
+  - data processing # data processing module: take input from the raw dataset and output the initial attributes
+    - DSO_file_attribute # FILE LOG
+      - FileMoniter # raw data of FILE LOG from DSO 
 |    |    |    | -- UserFiles # preprocessed data: input is the raw data
 |    |    |    | -- Output # extracted file log attributes: input is the preprocessed data
 |    |    |    | -- Code # code folder for extracting file log attributes, refer to“Readme.txt”             for details
