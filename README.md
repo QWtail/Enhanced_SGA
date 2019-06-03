@@ -17,36 +17,34 @@ Please find the dependencies in requirements.txt
 
 ## Directory Stucture 
 * Graph_based_anomaly_detection # main folder 
-  - 1_data processing # data processing module: 
-    Take input from the raw dataset and output the initial attributes. After change the variables in userList.py under main folder:
+  - userList.py # variables that needs to generated based on different dataset used.
+    - Important: Fix this file before all modules!
+  - 1_data processing # data processing module: take input from the raw dataset and output the initial attributes. To run this module:
     ```
     run ./code/generate_X_and_LX_initial.py 
     ```
-    The initial attributes for P3 P4 and P5 are under each folder
+    Output: the initial attributes for P3 P4 and P5 under each folder.
 
-  - graph analysis # graph module: take input from data processing module and output graph     attribute
-|    |    | -- codes # scripts for calculating the correlation graph matrix and outputing graph         attributes,  refer to“Readme.txt” for details
-|    |    | -- Output 
-|    |    |    | -- Combined_X # userwise *.csv, observations of raw attributes
-|    |    |    | -- Combined_LX # userwise *.csv, observations of graph attributes
-|    |    |    | -- graph_anomaly_weight.csv # weight for graph attributes in determing the             integrated anomaly score
-|    |    |    | -- G.pickle # correlation graph matrix
-|    | -- anomaly analysis  # prediction module: take input from graph analysis module and         output anomaly score
-|    |    | -- code # scripts of the prediction model and calculation of anomaly score,  refer         to“Readme.txt” for details
-|    |    | -- results
-|    |    |    | -- X # prediction error for raw attributes
-|    |    |    | -- LX # prediction error for graph attributes
-|    | -- dashboard    # visulization module: take input from anomaly analysis module and generate     a web-based dashboard
-|    |    | -- dash_demo_dso.py # main file,  refer to“Readme.txt” for details
-|    | -- README.docx # this file
-
-
+  - 2_graph_analysis # graph module: take input from data processing module and output graph attribute. To run this module:
+    ```
+    run ./Run_GraphAnalysis.py 
+    ```
+    Output: * the graph attributes for P3 P4 and P5 under each folder.
+            * graph_anomaly_weight.csv # weight for graph attributes in determing the integrated anomaly score
+            * G.pickle # correlation graph matrix
+  
+  - 3_anomaly_analysis  # prediction module: take input from graph analysis module and output anomaly score. To run this module:
+    ```
+    run Run_forecast_score_calculation.py
+    ```
+    Output: write to MongoDB for visulization
+    - Integrated anomaly score for each user everyday during selected period.
+    - Perdiction error for each group's attributes
+  - README.docx # this file
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+MOSCATO P5
 
 
 
