@@ -15,7 +15,8 @@ The three modules listed follow should run consecutively one after another. The 
 Please find the dependencies in requirements.txt
 ```
 
-## Directory Stucture 
+## Set up and run
+Please read the comments in the code for understanding
 * Graph_based_anomaly_detection # main folder 
   - userList.py # variables that needs to generated based on different dataset used.
     - Important: Fix this file before all modules!
