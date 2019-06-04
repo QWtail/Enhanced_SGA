@@ -38,7 +38,7 @@ Please read the comments in the code for understanding
   
   - 3_anomaly_analysis  # prediction module: >take input from graph analysis module and output anomaly score. To run this module:
     ```
-    run Run_forecast_score_calculation.py
+    run ./Run_forecast_score_calculation.py
     ```
     Output: write to MongoDB for visulization
     - Integrated anomaly score for each user everyday during selected period.
