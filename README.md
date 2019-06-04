@@ -20,10 +20,10 @@ Please find the dependencies in requirements.txt
   - userList.py # variables that needs to generated based on different dataset used.
     - Important: Fix this file before all modules!
   - 1_data processing # data processing module: >take input from the raw dataset and output the initial attributes. To run this module:
+    - Important: The function *initial_data()* in *generate_X_and_LX_functions.py* should fit to now dataset used before run.
     ```
     run ./code/generate_X_and_LX_initial.py 
     ```
-    - Important: The function *initial_data()* in *generate_X_and_LX_functions.py* should fit to now dataset used before run.
     Output: the initial attributes for P3 P4 and P5 under each folder.
 
   - 2_graph_analysis # graph module: >take input from data processing module and output graph attribute. To run this module:
