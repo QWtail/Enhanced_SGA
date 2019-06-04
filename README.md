@@ -19,13 +19,14 @@ Please find the dependencies in requirements.txt
 * Graph_based_anomaly_detection # main folder 
   - userList.py # variables that needs to generated based on different dataset used.
     - Important: Fix this file before all modules!
-  - 1_data processing # data processing module: take input from the raw dataset and output the initial attributes. To run this module:
+  - 1_data processing # data processing module: >take input from the raw dataset and output the initial attributes. To run this module:
     ```
     run ./code/generate_X_and_LX_initial.py 
     ```
+    - Important: The function *initial_data()* in *generate_X_and_LX_functions.py* should fit to now dataset used before run.
     Output: the initial attributes for P3 P4 and P5 under each folder.
 
-  - 2_graph_analysis # graph module: take input from data processing module and output graph attribute. To run this module:
+  - 2_graph_analysis # graph module: >take input from data processing module and output graph attribute. To run this module:
     ```
     run ./Run_GraphAnalysis.py 
     ```
@@ -34,18 +35,18 @@ Please find the dependencies in requirements.txt
     - graph_anomaly_weight.csv # weight for graph attributes in determing the integrated anomaly score
     - G.pickle # correlation graph matrix
   
-  - 3_anomaly_analysis  # prediction module: take input from graph analysis module and output anomaly score. To run this module:
+  - 3_anomaly_analysis  # prediction module: >take input from graph analysis module and output anomaly score. To run this module:
     ```
     run Run_forecast_score_calculation.py
     ```
     Output: write to MongoDB for visulization
     - Integrated anomaly score for each user everyday during selected period.
     - Perdiction error for each group's attributes
-  - README.docx # this file
+  - Readme.md # this file
 
 ## Authors
 
-MOSCATO P5
+MOSCATO P5 Team, please see top lines in each code files for the contributors who participated in each project.
 
 
 
